@@ -1,3 +1,5 @@
+$max-width: 354px;
+
 @mixin button() {
     border: none;
     cursor: pointer;
@@ -6,7 +8,8 @@
 
 @mixin text-button() {
     @include button();    
-    background: none;                
+    background: none;
+    width: fit-content;             
 }
 
 body {
@@ -17,6 +20,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include responsive_desktop() {
+        background-image: url("../images/pattern-background-desktop.svg");
+    }
 }
 
 .card-component {
@@ -33,7 +40,8 @@ body {
     width: 100%;
 }
 
-.info {
+.info {    
+    align-items: center;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -43,6 +51,11 @@ body {
         &__title {
             color: $neutral-color-3;
             margin-bottom: 1.6rem;
+        }
+
+        &__description {
+            align-self: center;
+            max-width: $max-width;
         }
     }
 }
@@ -54,7 +67,9 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 2.4rem 0;
+    max-width: $max-width;
     padding: 1.6rem;
+    width: 100%;
 
     &__details {
         flex-grow: 1;
@@ -87,9 +102,11 @@ body {
     background-color: $accent-color-1;    
     border-radius: 0.8em;
     box-shadow: 0 2rem 1.3rem rgba($color: $accent-color-1, $alpha: 0.12);
-    color: white;    
+    color: white; 
+    max-width: $max-width;   
     padding: 1.6rem 0;
     transition: background-color 200ms ease-in-out;
+    width: 100%;
 
     &:hover {
         background-color: rgba($color: $accent-color-1, $alpha: 0.7);
@@ -98,6 +115,7 @@ body {
 
 .cancel-btn {
     @include text-button();
+    align-self: center;
     color: $primary-color-2;
     margin-top: 2.4rem;
     transition: color 200ms ease-in-out;
