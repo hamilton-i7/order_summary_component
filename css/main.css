@@ -109,30 +109,49 @@ body {
 }
 
 .alt-plan__cta {
-  background: none;
   border: none;
   cursor: pointer;
   outline: none;
+  background: none;
   color: #382ae1;
   text-decoration: underline;
+  text-decoration-color: #382ae1;
+  transition: all 200ms ease-in-out;
+  transition-property: color, text-decoration-color;
+}
+
+.alt-plan__cta:hover {
+  color: rgba(56, 42, 225, 0.7);
+  text-decoration-color: transparent;
 }
 
 .cta {
-  background-color: #382ae1;
-  border: none;
-  border-radius: 0.8em;
-  box-shadow: 0 2rem 1.3rem rgba(56, 42, 225, 0.12);
-  color: white;
-  outline: none;
-  padding: 1.6rem 0;
-}
-
-.cancel-btn {
-  background: none;
   border: none;
   cursor: pointer;
   outline: none;
+  background-color: #382ae1;
+  border-radius: 0.8em;
+  box-shadow: 0 2rem 1.3rem rgba(56, 42, 225, 0.12);
+  color: white;
+  padding: 1.6rem 0;
+  transition: background-color 200ms ease-in-out;
+}
+
+.cta:hover {
+  background-color: rgba(56, 42, 225, 0.7);
+}
+
+.cancel-btn {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: none;
   color: #7280a7;
   margin-top: 2.4rem;
+  transition: color 200ms ease-in-out;
+}
+
+.cancel-btn:hover {
+  color: #1f2f56;
 }
 /*# sourceMappingURL=main.css.map */
