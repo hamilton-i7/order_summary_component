@@ -112,6 +112,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+  outline: none;
   color: #382ae1;
   text-decoration: underline;
 }
@@ -130,6 +131,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+  outline: none;
   color: #7280a7;
   margin-top: 2.4rem;
 }
