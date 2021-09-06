@@ -63,10 +63,6 @@ Something I didn't know up until now, is that text-decoration is not a property 
     }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Useful resources
 
 - [text-decoration-color transition](https://stackoverflow.com/questions/30352431/css-transition-not-working-with-underline) - This helped me solve the link underline transition problem.
