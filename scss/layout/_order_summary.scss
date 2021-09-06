@@ -19,7 +19,8 @@ body {
     color: $neutral-color-2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;    
+    position: relative;
 
     @include responsive_desktop() {
         background-image: url("../images/pattern-background-desktop.svg");

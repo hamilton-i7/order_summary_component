@@ -94,6 +94,14 @@ body {
   }
 }
 
+footer {
+  text-align: center;
+}
+
+footer a {
+  font-weight: 900;
+}
+
 body {
   align-items: center;
   background: url("../images/pattern-background-mobile.svg") no-repeat top/contain;
@@ -102,6 +110,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 @media only screen and (min-width: 1024px) {
