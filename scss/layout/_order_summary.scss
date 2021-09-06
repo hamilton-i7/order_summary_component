@@ -1,8 +1,12 @@
+@mixin button() {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
 @mixin text-button() {
-        background: none;
-        border: none;
-        cursor: pointer;
-        outline: none;
+    @include button();    
+    background: none;                
 }
 
 body {
@@ -65,23 +69,40 @@ body {
     &__cta {
         @include text-button();
 
-        color: $accent-color-1;
-        text-decoration: underline;
+        color: $accent-color-1;   
+        text-decoration: underline;     
+        text-decoration-color: $accent-color-1;
+        transition: all 200ms ease-in-out;
+        transition-property: color, text-decoration-color;
+
+        &:hover {
+            color: rgba($color: $accent-color-1, $alpha: 0.7);
+            text-decoration-color: transparent;
+        }
     }
 }
 
 .cta {
-    background-color: $accent-color-1;
-    border: none;
+    @include button();
+    background-color: $accent-color-1;    
     border-radius: 0.8em;
     box-shadow: 0 2rem 1.3rem rgba($color: $accent-color-1, $alpha: 0.12);
-    color: white;
-    outline: none;
+    color: white;    
     padding: 1.6rem 0;
+    transition: background-color 200ms ease-in-out;
+
+    &:hover {
+        background-color: rgba($color: $accent-color-1, $alpha: 0.7);
+    }
 }
 
 .cancel-btn {
     @include text-button();
     color: $primary-color-2;
     margin-top: 2.4rem;
+    transition: color 200ms ease-in-out;
+
+    &:hover {
+        color: $neutral-color-3;
+    }
 }
