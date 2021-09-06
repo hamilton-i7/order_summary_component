@@ -47,6 +47,10 @@ body {
     flex-direction: column;
     padding: 3.2rem 2.4rem;
 
+    @include responsive_tablet() {
+        padding: 4.5rem 4.8rem;
+    }
+
     .order {
         &__title {
             color: $neutral-color-3;
@@ -70,6 +74,12 @@ body {
     max-width: $max-width;
     padding: 1.6rem;
     width: 100%;
+
+    @include responsive_tablet() {
+        margin: 2rem;
+        margin-bottom: 3.2rem;
+        padding: 2.4rem;
+    }
 
     &__details {
         flex-grow: 1;
@@ -122,5 +132,9 @@ body {
 
     &:hover {
         color: $neutral-color-3;
+    }
+
+    @include responsive_tablet() {
+        margin-top: 3.2rem;
     }
 }

@@ -18,10 +18,22 @@ body {
   font-size: 1.6rem;
 }
 
+@media only screen and (min-width: 767px) {
+  body {
+    font-size: 1.7rem;
+  }
+}
+
 .order__title {
   font-weight: 900;
   text-align: center;
   font-size: 2.2rem;
+}
+
+@media only screen and (min-width: 767px) {
+  .order__title {
+    font-size: 2.8rem;
+  }
 }
 
 .order__description {
@@ -34,12 +46,30 @@ body {
   font-size: 1.4rem;
 }
 
+@media only screen and (min-width: 767px) {
+  .alt-plan__title {
+    font-size: 1.6rem;
+  }
+}
+
 .alt-plan__price {
   font-size: 1.4rem;
 }
 
+@media only screen and (min-width: 767px) {
+  .alt-plan__price {
+    font-size: 1.6rem;
+  }
+}
+
 .alt-plan__cta {
   font-weight: 900;
+}
+
+@media only screen and (min-width: 767px) {
+  .alt-plan__cta {
+    font-size: 1.4rem;
+  }
 }
 
 .cta {
@@ -47,9 +77,21 @@ body {
   font-weight: 900;
 }
 
+@media only screen and (min-width: 767px) {
+  .cta {
+    font-size: 1.6rem;
+  }
+}
+
 .cancel-btn {
   font-size: 1.5rem;
   font-weight: 900;
+}
+
+@media only screen and (min-width: 767px) {
+  .cancel-btn {
+    font-size: 1.6rem;
+  }
 }
 
 body {
@@ -90,6 +132,12 @@ body {
   padding: 3.2rem 2.4rem;
 }
 
+@media only screen and (min-width: 767px) {
+  .info {
+    padding: 4.5rem 4.8rem;
+  }
+}
+
 .info .order__title {
   color: #1f2f56;
   margin-bottom: 1.6rem;
@@ -110,6 +158,14 @@ body {
   max-width: 354px;
   padding: 1.6rem;
   width: 100%;
+}
+
+@media only screen and (min-width: 767px) {
+  .alt-plan {
+    margin: 2rem;
+    margin-bottom: 3.2rem;
+    padding: 2.4rem;
+  }
 }
 
 .alt-plan__details {
@@ -172,5 +228,11 @@ body {
 
 .cancel-btn:hover {
   color: #1f2f56;
+}
+
+@media only screen and (min-width: 767px) {
+  .cancel-btn {
+    margin-top: 3.2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
