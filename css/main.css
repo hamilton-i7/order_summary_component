@@ -1,0 +1,136 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.6rem;
+}
+
+.order__title {
+  font-weight: 900;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.order__description {
+  text-align: center;
+  line-height: 1.7;
+}
+
+.alt-plan__title {
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.alt-plan__price {
+  font-size: 1.4rem;
+}
+
+.alt-plan__cta {
+  font-weight: 900;
+}
+
+.cta {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.cancel-btn {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+body {
+  align-items: center;
+  background: url("../images/pattern-background-mobile.svg") no-repeat top/contain;
+  background-color: #e0e8ff;
+  color: #7280a7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-component {
+  border-radius: 2rem;
+  box-shadow: 0 2rem 1.8rem rgba(31, 47, 86, 0.1);
+  margin: 0 2.4rem;
+  min-width: 320px;
+  max-width: 450px;
+  overflow: hidden;
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+}
+
+.info {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 3.2rem 2.4rem;
+}
+
+.info .order__title {
+  color: #1f2f56;
+  margin-bottom: 1.6rem;
+}
+
+.alt-plan {
+  align-items: center;
+  background-color: #f5f7ff;
+  border-radius: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  margin: 2.4rem 0;
+  padding: 1.6rem;
+}
+
+.alt-plan__details {
+  flex-grow: 1;
+  margin-left: 2rem;
+}
+
+.alt-plan__title {
+  color: #1f2f56;
+  margin-bottom: 0.3rem;
+}
+
+.alt-plan__cta {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #382ae1;
+  text-decoration: underline;
+}
+
+.cta {
+  background-color: #382ae1;
+  border: none;
+  border-radius: 0.8em;
+  box-shadow: 0 2rem 1.3rem rgba(56, 42, 225, 0.12);
+  color: white;
+  outline: none;
+  padding: 1.6rem 0;
+}
+
+.cancel-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #7280a7;
+  margin-top: 2.4rem;
+}
+/*# sourceMappingURL=main.css.map */
